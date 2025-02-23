@@ -5,6 +5,10 @@ import { CompleteNavigators } from "./components/Navbar&Sidebar/Index";
 import { Linkedin } from "lucide-react";
 import { Facebook, Instagram, X } from "./utils/brands";
 
+export const metadata = {
+    title: "Nocturne",
+};
+
 export default function Home() {
     const socialLinks = [
         {

@@ -1,11 +1,11 @@
 export const metadata = {
-    title: "Contact Us",
+    title: "Store",
 };
 
-export default function ContactUs() {
+export default function Store() {
     return (
         <>
-            <h1 className="text-3xl">Contact Us</h1>
+            <h1 className="text-3xl">Store</h1>
             <h2 className="text-2xl">Nocturne</h2>
         </>
     );
