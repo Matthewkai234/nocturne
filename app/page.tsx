@@ -1,32 +1,32 @@
-"use client";
-import {
-    Search,
-    User,
-    ShoppingCart,
-    Menu,
-    Swords,
-    X,
-    ChevronDown,
-    Facebook,
-    Twitter,
-    Instagram,
-    Linkedin,
-} from "lucide-react";
-import { useState } from "react";
 import NextImage from "next/image";
 import NocturnalCover from "../review/NocturnalCover.jpg";
 import { Products } from "./components/Home/Products";
-import Link from "next/link";
 import { CompleteNavigators } from "./components/Navbar&Sidebar/Index";
+import { Linkedin } from "lucide-react";
+import { Facebook, Instagram, X } from "./utils/brands";
 
 export default function Home() {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
-    // const toggleMenu = () => setIsMenuOpen((prev) => !prev);
     const socialLinks = [
-        { icon: <Facebook size={20} />, href: "https://facebook.com/", label: "Facebook" },
-        { icon: <Twitter size={20} />, href: "https://twitter.com/", label: "Twitter" },
-        { icon: <Instagram size={20} />, href: "https://instagram.com/", label: "Instagram" },
-        { icon: <Linkedin size={20} />, href: "https://linkedin.com/", label: "LinkedIn" }
+        {
+            icon: <Facebook size={20} />,
+            href: "https://facebook.com/",
+            label: "Facebook",
+        },
+        {
+            icon: <X size={20} />,
+            href: "https://twitter.com/",
+            label: "Twitter",
+        },
+        {
+            icon: <Instagram size={20} />,
+            href: "https://instagram.com/",
+            label: "Instagram",
+        },
+        {
+            icon: <Linkedin size={20} />,
+            href: "https://linkedin.com/",
+            label: "LinkedIn",
+        },
     ];
 
     return (
@@ -48,7 +48,8 @@ export default function Home() {
                 <div className="max-w-6xl mx-auto px-4 py-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-sm">
-                            © {new Date().getFullYear()} Nocturne. All rights reserved.
+                            © {new Date().getFullYear()} Nocturne. All rights
+                            reserved.
                         </p>
 
                         <div className="flex items-center gap-6">

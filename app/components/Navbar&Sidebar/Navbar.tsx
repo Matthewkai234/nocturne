@@ -1,33 +1,13 @@
-"use client";
-import {
-    Search,
-    User,
-    ShoppingCart,
-    Menu,
-    Swords,
-    X,
-    ChevronDown,
-    Sidebar,
-} from "lucide-react";
-import { useState } from "react";
+import { Search, User, ShoppingCart } from "lucide-react";
 import "./styles.css";
 import Link from "next/link";
 import "./barsNavigation";
-import { useBarsNavigation } from "./barsNavigation";
-
+import { NavbarXButton } from "./NavbarXButton";
 
 export function Navbar() {
-    const { isSideBarOpen, toggleSideBar } = useBarsNavigation();
     return (
         <div className="navamp z-60">
-            <div className="navMenu">
-                {" "}
-                {isSideBarOpen ? (
-                    <X className="icon" onClick={toggleSideBar} />
-                ) : (
-                    <Menu className="icon" onClick={toggleSideBar} />
-                )}
-            </div>
+            <NavbarXButton />
 
             <div className="brand">
                 <a
@@ -42,7 +22,7 @@ export function Navbar() {
                 >
                     Store
                 </a>
-                
+
                 <a
                     href="#"
                     className="text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
