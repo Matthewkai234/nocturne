@@ -1,6 +1,6 @@
 "use client";
 import "./styles.css";
-import { useBarsNavigation } from "./barsNavigation";
+import { useBarsNavigation } from "~/app/hooks/useBarsNavigation";
 
 export function Veil() {
     const { isSideBarOpen, toggleSideBar } = useBarsNavigation();

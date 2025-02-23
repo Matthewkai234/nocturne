@@ -1,7 +1,7 @@
 "use client";
 import { Search, User, ShoppingCart, Swords, ChevronDown } from "lucide-react";
 import "./styles.css";
-import { useBarsNavigation } from "./barsNavigation";
+import { useBarsNavigation } from "~/app/hooks/useBarsNavigation";
 
 export function Sidebar() {
     const { isArrowClicked, isSideBarOpen, toggleDropArrow } =
