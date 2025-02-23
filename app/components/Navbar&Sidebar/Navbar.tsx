@@ -5,42 +5,47 @@ import "./barsNavigation";
 import { NavbarXButton } from "./NavbarXButton";
 
 export function Navbar() {
+    const linksClass =
+        "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer";
+
+    const links = [
+        {
+            href: "/",
+            className: linksClass,
+            name: "Home",
+        },
+        {
+            href: "#",
+            className: linksClass,
+            name: "Store",
+        },
+        {
+            href: "#",
+            className: linksClass,
+            name: "About Us",
+        },
+        {
+            href: "/contact-us",
+            className: linksClass,
+            name: "Contact Us",
+        },
+        {
+            href: "#",
+            className: linksClass,
+            name: "FAQ",
+        },
+    ];
+
     return (
         <div className="navamp z-60">
             <NavbarXButton />
 
             <div className="brand">
-                <a
-                    href="#"
-                    className="text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
-                >
-                    Home
-                </a>
-                <a
-                    href="#"
-                    className="text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
-                >
-                    Store
-                </a>
-
-                <a
-                    href="#"
-                    className="text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
-                >
-                    About Us
-                </a>
-                <Link
-                    href="/contact-us"
-                    className="text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
-                >
-                    Contact Us
-                </Link>
-                <a
-                    href="#"
-                    className="text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
-                >
-                    FAQ
-                </a>
+                {links.map((link, idx) => (
+                    <Link key={idx} href={link.href} className={link.className}>
+                        {link.name}
+                    </Link>
+                ))}
             </div>
 
             <div className="searchCartUserDiv">

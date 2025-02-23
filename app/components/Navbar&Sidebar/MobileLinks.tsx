@@ -1,32 +1,51 @@
 import Link from "next/link";
 import "./styles.css";
 
-export function MoblieLinks(){
+export function MoblieLinks() {
+    const linksClass =
+        "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer";
+
     const links = [
         {
-            href:"/", className: "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer", name:"Home"
+            href: "/",
+            className: linksClass,
+            name: "Home",
         },
         {
-            href:"#", className: "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer", name:"Store"
+            href: "#",
+            className: linksClass,
+            name: "Store",
         },
         {
-            href:"#", className: "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer", name:"About"
+            href: "#",
+            className: linksClass,
+            name: "About",
         },
         {
-            href:"/contact-us", className: "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer", name:"Contact"
+            href: "/contact-us",
+            className: linksClass,
+            name: "Contact",
         },
         {
-            href:"#", className: "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer", name:"FAQ"
-        }
-    ]
+            href: "#",
+            className: linksClass,
+            name: "FAQ",
+        },
+    ];
 
-    return(
+    return (
         <>
             <div className="brandLessThanSmall">
-                {links.map((link,index)=>(
-                    <Link key={index} href={link.href} className={link.className}>{link.name}</Link>
+                {links.map((link, index) => (
+                    <Link
+                        key={index}
+                        href={link.href}
+                        className={link.className}
+                    >
+                        {link.name}
+                    </Link>
                 ))}
             </div>
         </>
-    )
+    );
 }

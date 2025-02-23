@@ -3,14 +3,13 @@ import { Navbar } from "./Navbar";
 import { Sidebar } from "./Sidebar";
 import { Veil } from "./Veil";
 
-
-export function CompleteNavigators(){
-    return(
+export function CompleteNavigators() {
+    return (
         <>
-        <Navbar/>
-        <Veil/>
-        <Sidebar/>
-        <MoblieLinks/>
+            <Navbar />
+            <Veil />
+            <Sidebar />
+            <MoblieLinks />
         </>
-    )
+    );
 }
