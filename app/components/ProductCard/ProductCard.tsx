@@ -17,7 +17,7 @@ export function ProductCard({
     discountPrice,
 }: ProductCardProps) {
     return (
-        <div className="w-72 bg-white shadow-lg rounded-xl overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl">
+        <div className="w-72 bg-white shadow-lg rounded-xl overflow-hidden transform  duration-300 transition-all hover:scale-105 hover:shadow-2xl">
             <div className="relative">
                 <div className="aspect-w-4 aspect-h-3">
                     <NextImage
