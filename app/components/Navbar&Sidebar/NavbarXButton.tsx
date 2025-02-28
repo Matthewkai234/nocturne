@@ -1,7 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import { useBarsNavigation } from "./barsNavigation";
+import { useBarsNavigation } from "~/app/hooks/useBarsNavigation";
 import "./styles.css";
 
 export function NavbarXButton() {

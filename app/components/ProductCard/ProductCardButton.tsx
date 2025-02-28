@@ -1,9 +1,13 @@
-// "use client";
+"use client";
 
-// import { useCart } from "~/app/globals/Cart";
+import { useCart } from "~/app/hooks/useCart";
 
 export function ProductCardButton() {
-    // const { addToCart } = useCart();
+    const { addToCart } = useCart();
 
-    return <button className="btn btn-primary">Add to Cart</button>;
+    return (
+        <button className="btn btn-primary" onClick={addToCart}>
+            Add to Cart
+        </button>
+    );
 }

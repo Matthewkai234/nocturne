@@ -1,8 +1,8 @@
 import { Search, User, ShoppingCart } from "lucide-react";
 import "./styles.css";
 import Link from "next/link";
-import "./barsNavigation";
 import { NavbarXButton } from "./NavbarXButton";
+import { ShoppingCartItemsCount } from "../ShoppingCart/ShoppingCartItemsCount";
 
 export function Navbar() {
     const linksClass =
@@ -51,7 +51,10 @@ export function Navbar() {
             <div className="searchCartUserDiv">
                 <Search className="icon" />
                 <User className="icon" />
-                <ShoppingCart className="icon" />
+                <div className="relative">
+                    <ShoppingCart className="icon" />
+                    <ShoppingCartItemsCount />
+                </div>
             </div>
         </div>
     );
