@@ -15,12 +15,12 @@ export function Navbar() {
             name: "Home",
         },
         {
-            href: "#",
+            href: "/store",
             className: linksClass,
             name: "Store",
         },
         {
-            href: "#",
+            href: "/about",
             className: linksClass,
             name: "About Us",
         },
@@ -30,7 +30,7 @@ export function Navbar() {
             name: "Contact Us",
         },
         {
-            href: "#",
+            href: "/faq",
             className: linksClass,
             name: "FAQ",
         },

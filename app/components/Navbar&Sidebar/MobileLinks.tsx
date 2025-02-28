@@ -12,12 +12,12 @@ export function MoblieLinks() {
             name: "Home",
         },
         {
-            href: "#",
+            href: "/store",
             className: linksClass,
             name: "Store",
         },
         {
-            href: "#",
+            href: "/about",
             className: linksClass,
             name: "About",
         },
@@ -27,7 +27,7 @@ export function MoblieLinks() {
             name: "Contact",
         },
         {
-            href: "#",
+            href: "/faq",
             className: linksClass,
             name: "FAQ",
         },

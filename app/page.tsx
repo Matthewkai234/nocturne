@@ -2,8 +2,11 @@ import NextImage from "next/image";
 import NocturnalCover from "../review/NocturnalCover.jpg";
 import { Products } from "./components/Home/Products";
 import { CompleteNavigators } from "./components/Navbar&Sidebar/Index";
-import { Linkedin } from "lucide-react";
-import { Facebook, Instagram, X } from "./utils/brands";
+import { Facebook, Instagram, Linkedin, X } from "./utils/brands";
+
+export const metadata = {
+    title: "Nocturne",
+};
 
 export default function Home() {
     const socialLinks = [
