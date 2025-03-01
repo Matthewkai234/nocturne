@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { ProductCardButton } from "./ProductCardButton";
 import NextImage from "next/image";
 
 export type ProductCardProps = {
+    id: number;
     pic: string;
     name: string;
     description: string;
@@ -10,6 +12,7 @@ export type ProductCardProps = {
 };
 
 export function ProductCard({
+    id,
     pic,
     name,
     description,
@@ -20,16 +23,18 @@ export function ProductCard({
         <div className="w-72 bg-white shadow-lg rounded-xl overflow-hidden transform  duration-300 transition-all hover:scale-105 hover:shadow-2xl">
             <div className="relative">
                 <div className="aspect-w-4 aspect-h-3">
-                    <NextImage
-                        src={pic}
-                        alt={name}
-                        sizes="(max-width: 768px) 100vw,
+                    <Link href={`/product/${id}`}>
+                        <NextImage
+                            src={pic}
+                            alt={name}
+                            sizes="(max-width: 768px) 100vw,
                                    (max-width: 1200px) 50vw,
                                    33vw"
-                        className="object-fill"
-                        fill
-                        priority
-                    />
+                            className="object-fill"
+                            fill
+                            priority
+                        />
+                    </Link>
                 </div>
                 {discountPrice !== undefined && discountPrice < price && (
                     <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded-full text-xs">

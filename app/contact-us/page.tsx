@@ -8,15 +8,24 @@ export const metadata = {
 export default function ContactUs() {
     return (
         <>
-            <CompleteNavigators/>
+            <CompleteNavigators />
             <div className="bg-[#121212] min-h-screen flex flex-col items-center justify-center px-4">
                 <div className="max-w-4xl w-full bg-[#1c1c1c] p-8 rounded-lg shadow-lg shadow-gray-900">
-                    <h1 className="text-3xl text-[#D4AF37] font-bold mb-4 text-center">Contact Us</h1>
-                    <h2 className="text-2xl text-[#7e1b5e] font-medium mb-8 text-center">Nocturne</h2>
+                    <h1 className="text-3xl text-[#D4AF37] font-bold mb-4 text-center">
+                        Contact Us
+                    </h1>
+                    <h2 className="text-2xl text-[#7e1b5e] font-medium mb-8 text-center">
+                        Nocturne
+                    </h2>
 
                     <form className="space-y-6">
                         <div className="flex flex-col">
-                            <label htmlFor="name" className="text-white font-medium">Your Name</label>
+                            <label
+                                htmlFor="name"
+                                className="text-white font-medium"
+                            >
+                                Your Name
+                            </label>
                             <input
                                 type="text"
                                 id="name"
@@ -27,7 +36,12 @@ export default function ContactUs() {
                         </div>
 
                         <div className="flex flex-col">
-                            <label htmlFor="email" className="text-white font-medium">Email Address</label>
+                            <label
+                                htmlFor="email"
+                                className="text-white font-medium"
+                            >
+                                Email Address
+                            </label>
                             <input
                                 type="email"
                                 id="email"
@@ -38,7 +52,12 @@ export default function ContactUs() {
                         </div>
 
                         <div className="flex flex-col">
-                            <label htmlFor="message" className="text-white font-medium">Message</label>
+                            <label
+                                htmlFor="message"
+                                className="text-white font-medium"
+                            >
+                                Message
+                            </label>
                             <textarea
                                 id="message"
                                 name="message"
@@ -59,8 +78,7 @@ export default function ContactUs() {
                     </form>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }
-
