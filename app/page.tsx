@@ -11,7 +11,6 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            {/* <div className="welcomeDev"><h2>Welcome to our store</h2></div> */}
             <CompleteNavigators />
 
             <div className="grid place-items-center">
@@ -21,9 +20,9 @@ export default function Home() {
                     alt="Nocturne"
                 />
             </div>
+
             <Products />
-            <Footer/>
-            
+            <Footer />
         </>
     );
 }

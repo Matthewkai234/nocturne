@@ -5,6 +5,21 @@ import Loading from "./loading";
 import NextImage from "next/image";
 import Link from "next/link";
 import { ProductPageCartButton } from "./ProductPageCartButton";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ id: number }>;
+}): Promise<Metadata> {
+    const id = (await params).id;
+    const product = await db.findById(id);
+
+    return {
+        title: product ? `${product.name} - Nocturne` : "Product - Nocturne",
+        description: `${product?.description}`,
+    };
+}
 
 export default async function ProductPage({
     params,
