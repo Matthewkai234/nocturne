@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { ProductCardProps } from "~/app/components/ProductCard/ProductCard";
 import { useCart } from "~/app/hooks/useCart";
 
 export function ProductPageCartButton() {
