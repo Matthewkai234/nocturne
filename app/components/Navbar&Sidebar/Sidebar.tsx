@@ -9,7 +9,7 @@ export function Sidebar() {
 
     return (
         <div
-            className={`fixed top-12 bottom-0 left-0 w-64 bg-gradient-to-b bg-[#121212] 
+            className={`fixed top-20 bottom-0 left-0 w-64 bg-gradient-to-b bg-[#121212] 
                 text-white bg-opacity-95 transform transition-transform duration-300 ease-in-out 
                 z-50 ${isSideBarOpen ? "translate-x-0" : "-translate-x-full"}`}
         >
@@ -65,11 +65,7 @@ export function Sidebar() {
                 </ul>
             </div>
 
-            <div className="md:hidden absolute bottom-0 left-0 w-full flex justify-center items-center p-4">
-                <Search className="icon mx-2" />
-                <User className="icon mx-2" />
-                <ShoppingCart className="icon mx-2" />
-            </div>
+
         </div>
     );
 }

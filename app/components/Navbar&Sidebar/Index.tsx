@@ -7,9 +7,10 @@ export function CompleteNavigators() {
     return (
         <>
             <Navbar />
+            <MoblieLinks />
             <Veil />
             <Sidebar />
-            <MoblieLinks />
+            
         </>
     );
 }

@@ -7,7 +7,7 @@ export function ShoppingCartItemsCount() {
     return (
         <>
             {cartItemCount > 0 && (
-                <div className="hidden md:flex absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 items-center justify-center font-bold">
+                <div className=" flex absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 items-center justify-center font-bold">
                     {cartItemCount}
                 </div>
             )}

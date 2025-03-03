@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function SingleProductSkeleton() {
     return (
-        <div className="container mx-auto py-8 px-4 lg:px-8 bg-[#121212] min-h-screen">
+        <div className=" mx-auto py-8 px-4 lg:px-8 bg-[#121212] min-h-screen">
             <div className="flex items-center space-x-2 mb-6 lg:mb-8 animate-pulse">
                 <div className="h-4 bg-gradient-to-r from-[#1a1a1a] to-[#2d2d2d] rounded-md w-16"></div>
                 <div className="text-[#7e1b5e]">/</div>
