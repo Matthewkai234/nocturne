@@ -4,7 +4,7 @@ import { ProductCard } from "../ProductCard/ProductCard";
 export function Products() {
     const products = db.find();
     return (
-        <div className="bg-[url('https://www.transparenttextures.com/patterns/white-diamond-dark.png'),_linear-gradient(to_bottom,#040105,#050105,#040105)]">
+        <div className="bg-[url('https://www.transparenttextures.com/patterns/white-diamond-dark.png'),_linear-gradient(to_bottom,#040105,#0e030f,#040105)]">
             <div className="min-h-screen text-gray-800 dark:text-gray-200 p-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="mt-7">

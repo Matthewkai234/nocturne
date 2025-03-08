@@ -51,7 +51,7 @@ export function Navbar() {
                 <div className="relative group  mt-1">
                     <input
                         type="text"
-                        placeholder="Seek knowledge..."
+                        placeholder="Search..."
                         className=" w-full pl-15 py-3 bg-[#fa525208] border border-[#ffffff15] rounded-xl text-[#ffffff] focus:outline-none focus:border-[#D4AF37] focus:ring-2 focus:ring-[#b0a4ff33] transition-all placeholder-[#939393]"
                     />
                     <Search className="h-6 w-6 text-[#939393] absolute left-4 top-3 group-hover:text-[#D4AF37] transition-colors" />

@@ -4,7 +4,7 @@ import { useBarsNavigation } from "~/app/hooks/useBarsNavigation";
 import Link from "next/link";
 
 export function Sidebar() {
-    const { isArrowClicked, isSideBarOpen, toggleDropArrow } = 
+    const { isArrowClicked, isSideBarOpen, toggleDropArrow } =
         useBarsNavigation();
 
     return (
@@ -38,7 +38,7 @@ export function Sidebar() {
                             </span>
                             <ChevronDown className={`transform transition-transform ${isArrowClicked ? 'rotate-180' : ''} text-[#D4AF37]`} />
                         </button>
-                        
+
                         {isArrowClicked && (
                             <ul className="ml-6 mt-2 space-y-2 border-l-2 border-[#D4AF37] pl-4">
                                 {['Ancient Relics', 'Arcane Tools', 'Enchanted Jewels', 'Mystical Tomes'].map((item) => (
