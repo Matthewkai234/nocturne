@@ -1,6 +1,4 @@
 import Link from "next/link";
-import "./styles.css";
-
 export function MoblieLinks() {
     const linksClass =
         "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer";
@@ -12,12 +10,12 @@ export function MoblieLinks() {
             name: "Home",
         },
         {
-            href: "#",
+            href: "/store",
             className: linksClass,
             name: "Store",
         },
         {
-            href: "#",
+            href: "/about",
             className: linksClass,
             name: "About",
         },
@@ -27,7 +25,7 @@ export function MoblieLinks() {
             name: "Contact",
         },
         {
-            href: "#",
+            href: "/faq",
             className: linksClass,
             name: "FAQ",
         },
@@ -35,7 +33,7 @@ export function MoblieLinks() {
 
     return (
         <>
-            <div className="brandLessThanSmall">
+            <div className=" text-white flex place-items-center  place-content-center bg-black space-x-6 sm:space-x-18 md:space-x-20 lg:hidden border-b  border-gray-300 border-solid shadow-lg  py-1">
                 {links.map((link, index) => (
                     <Link
                         key={index}
