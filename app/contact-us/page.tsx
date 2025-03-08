@@ -9,7 +9,7 @@ export default function ContactUs() {
     return (
         <>
             <CompleteNavigators />
-            <div className="bg-[#121212] min-h-screen flex flex-col items-center justify-center px-4">
+            <div className="bg-[url('https://www.transparenttextures.com/patterns/white-diamond-dark.png'),_linear-gradient(to_bottom,#040105,#050105,#040105)]  min-h-screen flex flex-col items-center justify-center px-4">
                 <div className="max-w-4xl w-full bg-[#1c1c1c] p-8 rounded-lg shadow-lg shadow-gray-900">
                     <h1 className="text-3xl text-[#D4AF37] font-bold mb-4 text-center">
                         Contact Us

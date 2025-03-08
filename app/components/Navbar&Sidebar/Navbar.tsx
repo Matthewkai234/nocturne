@@ -7,15 +7,15 @@ export function Navbar() {
     const linksClass = "relative text-lg font-medium text-white px-4 py-2 transition-all duration-300 hover:pl-6 group hover:text-[#D4AF37]";
 
     const links = [
-        { href: "/", name: "Sanctuary" },
-        { href: "/store", name: "Relics" },
-        { href: "/about", name: "Lineage" },
-        { href: "/contact-us", name: "Summons" },
-        { href: "/faq", name: "Wisdom" },
+        { href: "/", name: "Home" },
+        { href: "/store", name: "Store" },
+        { href: "/about", name: "About" },
+        { href: "/contact-us", name: "Contact" },
+        { href: "/faq", name: "FAQ" },
     ];
 
     return (
-        <nav className="sticky top-0 flex justify-center xl:gap-10 items-center bg-gradient-to-r from-[#121212] via-[#7e1b5e] to-[#121212] backdrop-blur-lg border-b border-[#ffffff08] w-full h-20 z-50 shadow-xl shadow-gray-900">
+        <nav className="sticky top-0 flex justify-center xl:gap-10 items-center bg-[url('https://www.transparenttextures.com/patterns/mirrored-squares.png'),_linear-gradient(to_right,#000000,#1c031c,#000000)] backdrop-blur-lg border-b border-[#D4AF37] w-full h-20 z-50 shadow-xl shadow-[#02020f]">
 
 
             {/* Column 1 - NavbarXButton */}

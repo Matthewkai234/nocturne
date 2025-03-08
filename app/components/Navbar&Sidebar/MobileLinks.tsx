@@ -1,6 +1,4 @@
 import Link from "next/link";
-import "./styles.css";
-
 export function MoblieLinks() {
     const linksClass =
         "text-xl font-serif hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer";

@@ -1,5 +1,4 @@
 "use client";
-import "./styles.css";
 import { useBarsNavigation } from "~/app/hooks/useBarsNavigation";
 
 export function Veil() {
