@@ -1,5 +1,5 @@
 "use client";
-import { Search, User, ShoppingCart, Moon, ChevronDown } from "lucide-react";
+import { Moon, ChevronDown } from "lucide-react";
 import { useBarsNavigation } from "~/app/hooks/useBarsNavigation";
 import Link from "next/link";
 
@@ -36,14 +36,24 @@ export function Sidebar() {
                             <span className="text-lg font-medium text-[#D4AF37] group-hover:text-white">
                                 Mystical Categories
                             </span>
-                            <ChevronDown className={`transform transition-transform ${isArrowClicked ? 'rotate-180' : ''} text-[#D4AF37]`} />
+                            <ChevronDown
+                                className={`transform transition-transform ${isArrowClicked ? "rotate-180" : ""} text-[#D4AF37]`}
+                            />
                         </button>
 
                         {isArrowClicked && (
                             <ul className="ml-6 mt-2 space-y-2 border-l-2 border-[#D4AF37] pl-4">
-                                {['Ancient Relics', 'Arcane Tools', 'Enchanted Jewels', 'Mystical Tomes'].map((item) => (
+                                {[
+                                    "Ancient Relics",
+                                    "Arcane Tools",
+                                    "Enchanted Jewels",
+                                    "Mystical Tomes",
+                                ].map((item) => (
                                     <li key={item} className="group">
-                                        <Link href="#" className="block px-4 py-2 text-gray-300 hover:text-[#D4AF37] rounded-lg transition-all duration-300 hover:bg-[#ffffff08] hover:pl-6">
+                                        <Link
+                                            href="#"
+                                            className="block px-4 py-2 text-gray-300 hover:text-[#D4AF37] rounded-lg transition-all duration-300 hover:bg-[#ffffff08] hover:pl-6"
+                                        >
                                             {item}
                                         </Link>
                                     </li>
@@ -52,9 +62,18 @@ export function Sidebar() {
                         )}
                     </li>
 
-                    {['Featured Collections', 'New Arrivals', 'Best Sellers', 'Limited Editions', 'Seasonal Offers'].map((item) => (
+                    {[
+                        "Featured Collections",
+                        "New Arrivals",
+                        "Best Sellers",
+                        "Limited Editions",
+                        "Seasonal Offers",
+                    ].map((item) => (
                         <li key={item} className="group">
-                            <Link href="#" className="flex items-center px-6 py-3 rounded-xl hover:bg-[#ffffff08] transition-all duration-300 hover:pl-8">
+                            <Link
+                                href="#"
+                                className="flex items-center px-6 py-3 rounded-xl hover:bg-[#ffffff08] transition-all duration-300 hover:pl-8"
+                            >
                                 <span className="text-lg font-medium text-gray-300 group-hover:text-[#D4AF37]">
                                     {item}
                                 </span>
@@ -66,8 +85,12 @@ export function Sidebar() {
 
                 {/* Special Offer Banner */}
                 <div className="mt-8 mx-4 p-4 rounded-xl bg-gradient-to-r from-[#D4AF3715] to-[#9b7f2015] border border-[#D4AF3733]">
-                    <h3 className="text-[#D4AF37] font-semibold mb-2">Exclusive Offer</h3>
-                    <p className="text-sm text-gray-300">Get 20% off your first purchase of ancient artifacts!</p>
+                    <h3 className="text-[#D4AF37] font-semibold mb-2">
+                        Exclusive Offer
+                    </h3>
+                    <p className="text-sm text-gray-300">
+                        Get 20% off your first purchase of ancient artifacts!
+                    </p>
                 </div>
             </div>
         </div>

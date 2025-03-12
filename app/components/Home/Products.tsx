@@ -8,7 +8,7 @@ export function Products() {
             <div className="min-h-screen text-gray-800 dark:text-gray-200 p-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="mt-7">
-                        <h2 className="text-3xl font-bold mb-8 text-center md:text-left">
+                        <h2 className="text-3xl text-gray-200 font-bold mb-8 text-center md:text-left">
                             Featured Products
                         </h2>
                         <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
