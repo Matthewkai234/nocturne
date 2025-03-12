@@ -6,6 +6,8 @@ import NextImage from "next/image";
 import Link from "next/link";
 import { ProductPageCartButton } from "./ProductPageCartButton";
 import { Footer } from "~/app/components/Footer/Footer";
+import Title from "./Title";
+import NotFound from "~/app/not-found";
 
 export default async function ProductPage({
     params,
@@ -31,7 +33,7 @@ async function ProductDetails({ id }: { id: number }) {
     const product = await db.findById(id);
 
     if (!product) {
-        return <h1 className="text-3xl text-white">No Such Product</h1>;
+        return <NotFound show={false} />;
     }
 
     const discountPercentage = product.discountPrice
@@ -42,6 +44,7 @@ async function ProductDetails({ id }: { id: number }) {
 
     return (
         <div className="container mx-auto py-8 px-4 lg:px-8">
+            <Title title={product.name} />
             <nav className="flex items-center text-sm mb-6 lg:mb-8">
                 <Link
                     href="/"

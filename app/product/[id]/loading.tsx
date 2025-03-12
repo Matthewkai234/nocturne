@@ -1,9 +1,11 @@
 import ScrollToTop from "./ScrollToTop";
 import "./style.css";
+import Title from "./Title";
 
 export default function SingleProductSkeleton() {
     return (
         <div className="mx-auto py-8 px-4 lg:px-8 bg-gradient-to-b from-[#0a0a0a] to-[#1c031c] min-h-screen">
+            <Title title="Nocturne - Loading" />
             <ScrollToTop />
             <div className="flex items-center space-x-2 mb-6 lg:mb-8 animate-pulse">
                 <div className="h-4 bg-gradient-to-r from-[#0a0a0a] to-[#1c031c] rounded-md w-16"></div>
