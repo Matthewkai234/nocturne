@@ -4,7 +4,8 @@ import { NavbarXButton } from "./NavbarXButton";
 import { ShoppingCartItemsCount } from "../ShoppingCart/ShoppingCartItemsCount";
 
 export function Navbar() {
-    const linksClass = "relative text-lg font-medium text-white px-4 py-2 transition-all duration-300 hover:pl-6 group hover:text-[#D4AF37]";
+    const linksClass =
+        "relative text-lg font-medium text-white px-4 py-2 transition-all duration-300 hover:pl-6 group hover:text-[#D4AF37]";
 
     const links = [
         { href: "/", name: "Home" },
@@ -16,8 +17,6 @@ export function Navbar() {
 
     return (
         <nav className="sticky top-0 flex justify-center xl:gap-10 items-center bg-[url('https://www.transparenttextures.com/patterns/mirrored-squares.png'),_linear-gradient(to_right,#000000,#1c031c,#000000)] backdrop-blur-lg border-b border-[#D4AF37] w-full h-20 z-50 shadow-xl shadow-[#02020f]">
-
-
             {/* Column 1 - NavbarXButton */}
             <div className="flex justify-center ml-2 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10 pl-3 lg:pl-30 ">
                 <button className="p-3.5 rounded-lg bg-[#ffffff08] hover:bg-[#b0a4ff15] transition-all group">
@@ -32,10 +31,7 @@ export function Navbar() {
                         </span>
                     </Link>
                 </div>
-
             </div>
-
-
 
             {/* Column 3 - Links */}
             <div className=" justify-center hidden lg:block lg:space-x-1 xl:space-x-5">
@@ -68,8 +64,6 @@ export function Navbar() {
                     </button>
                 </div>
             </div>
-
         </nav>
     );
-
 }

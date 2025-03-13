@@ -10,7 +10,6 @@ export function CompleteNavigators() {
             <MoblieLinks />
             <Veil />
             <Sidebar />
-            
         </>
     );
 }
