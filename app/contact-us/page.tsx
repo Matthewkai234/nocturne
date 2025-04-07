@@ -24,7 +24,7 @@ export default function ContactUs() {
                     <div className="grid grid-cols-1  gap-8">
 
                         {/* Contact Form */}
-                        <form className="space-y-8 px-20 py-10 rounded-xl bg-white/3 backdrop-blur-sm border border-white/10 hover:border-white/20">
+                        <form className="space-y-8 px-20 py-10 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20">
                             <div>
                                 <label className="block text-sm font-medium text-purple-100/80 mb-2">
                                     Name
