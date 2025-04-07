@@ -55,7 +55,9 @@ export function Navbar() {
 
                 <div className="flex gap-5 lg:gap-3 ">
                     <button className="p-3.5 rounded-lg bg-[#ffffff08] hover:bg-[#b0a4ff15] transition-all group">
-                        <User className="h-8 w-8 text-white group-hover:text-[#D4AF37] transform group-hover:scale-125 transition-all duration-300" />
+                        <Link href="/login">
+                            <User className="h-8 w-8 text-white group-hover:text-[#D4AF37] transform group-hover:scale-125 transition-all duration-300" />
+                        </Link>
                     </button>
 
                     <button className="p-3.5 rounded-lg bg-[#ffffff08] hover:bg-[#b0a4ff15] transition-all group relative">
